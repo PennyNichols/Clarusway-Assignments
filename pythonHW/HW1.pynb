@@ -1,0 +1,15 @@
+# Enter name to recieve password
+# Write a program that:
+# 1. Takes the first name from the user and compares to yours
+# 2. If name matches, print out: "Hello Penny! The password is &#1298",
+# 3. If name does not match, print out: "Hello {name}! See you later."
+
+my_name = "penny"
+
+name = input("What is your name?").lower()
+
+if name == my_name :
+    print("Hello, Penny! The password is &#1298")
+else :
+    print(f"Hello, {name}! See you later.")
+    
