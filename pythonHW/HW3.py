@@ -9,17 +9,15 @@
 # 2. Checks if it is an Armstrong number
 # 3. Consider negatives, floats, and other entries and displays warning
 
-x = input("Please enter a positive integer: ").lower()
+x = input("Please enter a positive integer: ")
 x_list = list(x)
 x_set = set(x)
-letters = set('abcdefghijklmnopqrstuvwxyz')
-dec = {".", ","}
-neg = {"-",}
+
 num = []
 numbers = []
 numbers_squared = []
 
-while ((x_set & letters) != set()) or ((x_set & dec) != set()) or ((x_set & neg) != set()) :
+while x.isdigit() == False :
     print ("Invalid entry. Do not use non-numeric, float, or negative values!")
     break
 
