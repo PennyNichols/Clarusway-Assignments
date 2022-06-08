@@ -6,13 +6,15 @@
 
 strs = ["eat", "tea", "tan", "ate", "nat", "bat", "cat", "tac"]
 
-# sort each word one at a time, if sorted word is not already a sorted key, add key and value to dict
-# if sorted word is already key, add to value 
+# sort each word one at a time
+# if sorted word is not already a sorted key, add key and value to dict
+# if sorted word is already key, add as a value
 
 d = {}
 
 for word in strs :
-    sorted_key = "".join(sorted(word))  # joining with empty string gives list of words instead of list of letters of word
+    sorted_key = "".join(sorted(word))
+# joining with empty string joins characters to a single element
 
     if sorted_key in d :
         d[sorted_key].append(word)
